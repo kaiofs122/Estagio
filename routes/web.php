@@ -6,4 +6,5 @@ use App\Http\Controllers\ProdutoController;
 
 Route::get('/', [ProdutoController::class, 'index']);
 
+Route::get('/produto/{id}', [ProdutoController::class, 'interessante']);
 

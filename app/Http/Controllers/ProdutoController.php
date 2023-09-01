@@ -9,4 +9,9 @@ class ProdutoController extends Controller
     public function index(){
         return "index";
     }
+
+    public function interessante($id){
+        return "show: ".$id;
+    }
+
 }
