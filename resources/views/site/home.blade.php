@@ -7,13 +7,13 @@
 
 {{-- isset($nome) ? 'existe' : 'não existe'--}}
 
-{{$teste ?? 'Padrao'}}
+{{--$teste ?? 'Padrao'--}}
 
 {{--Estrutura de controle--}}
 
-@if($nome == 'Kaio')
-    true
-@endif
-    false
+@guest
+    Não está autenticado
+@endguest
+ 
 
 @endsection
