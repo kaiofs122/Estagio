@@ -11,9 +11,9 @@
 
 {{--Estrutura de controle--}}
 
-@guest
-    Não está autenticado
-@endguest
+@foreach ($frutas as $fruta)
+    {{$fruta}} <br>
+@endforeach
  
 
 @endsection
