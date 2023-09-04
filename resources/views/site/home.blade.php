@@ -3,17 +3,12 @@
 @section('conteudo')
     <h1> Essa é a nossa Home </h1>
 
-{{--Isso é um comentário--}}    
+@include('includes.mensagem', ['Titulo' => 'Mensagem de sucesso!'])
 
-{{-- isset($nome) ? 'existe' : 'não existe'--}}
-
-{{--$teste ?? 'Padrao'--}}
-
-{{--Estrutura de controle--}}
-
-@foreach ($frutas as $fruta)
-    {{$fruta}} <br>
-@endforeach
- 
+@component('components.sidebar')
+    @slot('paragrafo')
+        Texto qualquer vindo do slot
+    @endslot
+@endcomponent
 
 @endsection
